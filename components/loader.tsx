@@ -10,7 +10,7 @@ export const Loader =()=>{
                  src="/logo.png"/>
             </div>
             <p className="text-sm text-muted-foreground">
-                Ruko jara Sabar karo.....
+                Wait response generating.....
             </p>
         </div>
     )
