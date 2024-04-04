@@ -18,14 +18,12 @@ import { cn } from "@/lib/utils";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardFooter } from "@/components/ui/card";
 import Image from "next/image";
-import { useProModal } from "@/hooks/use-pro-modal";
 import toast from "react-hot-toast";
 
 
 
 
 const ImagePage = () =>{
-    const proModel = useProModal();
     const router = useRouter();
     const [images, setImages] = useState<string[]>([]);
    
@@ -50,11 +48,7 @@ const ImagePage = () =>{
             form.reset();
 
         }catch(error: any){
-            if(error?.response?.status === 403){
-                proModel.onOpen();
-            }else{
-                toast.error("Something went wrong");  
-            }
+            toast.error("Something went wrong");  
         }finally{
             router.refresh();
         }

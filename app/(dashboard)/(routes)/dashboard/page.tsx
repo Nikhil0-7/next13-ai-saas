@@ -24,18 +24,18 @@ const tools =[
         href: "/image"
     },
     {
-        label: "Video Generation",
-        icon: VideoIcon,
-        color: "text-pink-700",
-        bgColor: "bg-pink-700/10",
-        href: "/video"
-    },
-    {
         label: "Music Generation",
         icon: Music,
         color: "text-emerald-500",
         bgColor: "bg-emerald-500/10",
         href: "/music"
+    },
+    {
+        label: "GIF Generation",
+        icon: VideoIcon,
+        color: "text-emerald-500",
+        bgColor: "bg-emerald-500/10",
+        href: "/video"
     },
     {
         label: "Code Generation",
